@@ -1,0 +1,470 @@
+ // 鸽子
+ /* Start */
+ .gu {
+   position: absolute;
+   bottom: -0.2rem;
+   left: 3.2rem;
+   z-index: 31;
+
+
+   img {
+     width: 0.7rem;
+     height: 1rem;
+     position: relative;
+     top: 0px;
+     left: 0px;
+   }
+ }
+
+ .Up2 {
+   animation: Up2 2.5s forwards;
+ }
+
+ /* 闪回固定类 */
+ .absolute1 {
+   position: absolute;
+   bottom: 3.7rem;
+   left: 1.5rem;
+ }
+
+ .absolute2 {
+   position: absolute;
+   bottom: 5.7rem;
+   left: 4rem;
+ }
+
+ .absolute3 {
+   position: absolute;
+   bottom: 3.1rem;
+   left: 5.4rem;
+ }
+
+ .absolute4 {
+   position: absolute;
+   bottom: 2.65rem;
+   left: 3.25rem;
+ }
+
+ /* 运动过程类 */
+ .animation1 {
+   animation:
+     geFirst1 1.5s linear,
+     geFirst2 1s 1.5s linear,
+     geFirst3 2.5s 2.5s linear,
+     geFirst4 1s 5s linear forwards;
+ }
+
+ .animation2 {
+   animation:
+     geSecond1 0.75s linear,
+     geSecond2 4s 0.75s linear forwards,
+ }
+
+ .animation3 {
+   animation:
+     geThird1 0.75s linear,
+     geThird2 0.75s 0.75s linear,
+     geThird3 1s 1.5s linear,
+     geThird4 1.5s 2.5s linear forwards;
+ }
+
+ .animation4 {
+   animation:
+     geFourth1 0.5s linear,
+     geFourth2 0.5s 0.5s linear,
+     geFourth3 1s 1s linear,
+     geFourth4 1s 2s linear forwards;
+ }
+
+ /* 第一段 */
+ @keyframes geFirst1 {
+   0% {
+     bottom: -0.2rem;
+     left: 3.2rem;
+   }
+
+   100% {
+     bottom: 0.7rem;
+     left: 1.8rem;
+   }
+ }
+
+ @keyframes geFirst2 {
+   0% {
+     bottom: 0.7rem;
+     left: 1.8rem;
+   }
+
+   100% {
+     bottom: 1.3rem;
+     left: 2.7rem;
+   }
+ }
+
+ @keyframes geFirst3 {
+   0% {
+     bottom: 1.3rem;
+     left: 2.7rem;
+   }
+
+   100% {
+     bottom: 2.5rem;
+     left: 0.6rem;
+   }
+ }
+
+ @keyframes geFirst4 {
+   0% {
+     bottom: 2.5rem;
+     left: 0.6rem;
+   }
+
+   100% {
+     bottom: 3.7rem;
+     left: 1.5rem;
+   }
+ }
+
+ /* 第二段 */
+ @keyframes geSecond1 {
+   0% {
+     bottom: 3.7rem;
+     left: 1.5rem;
+   }
+
+   100% {
+     bottom: 4rem;
+     left: 1.1rem;
+   }
+ }
+
+ @keyframes geSecond2 {
+   0% {
+     bottom: 4rem;
+     left: 1.1rem;
+   }
+
+   100% {
+     bottom: 5.7rem;
+     left: 4rem;
+   }
+ }
+
+ /* 第三段 */
+ @keyframes geThird1 {
+   0% {
+     bottom: 5.7rem;
+     left: 4rem;
+   }
+
+   100% {
+     bottom: 5rem;
+     left: 4.5rem;
+   }
+ }
+
+ @keyframes geThird2 {
+   0% {
+     bottom: 5rem;
+     left: 4.5rem;
+   }
+
+   100% {
+     bottom: 4.5rem;
+     left: 4.9rem;
+   }
+ }
+
+ @keyframes geThird3 {
+   0% {
+     bottom: 4.5rem;
+     left: 4.9rem;
+   }
+
+   100% {
+     bottom: 4rem;
+     left: 4rem;
+   }
+ }
+
+ @keyframes geThird4 {
+   0% {
+     bottom: 4rem;
+     left: 4rem;
+   }
+
+   100% {
+     bottom: 3.1rem;
+     left: 5.4rem;
+   }
+ }
+
+ /* 第四段 */
+ @keyframes geFourth1 {
+   0% {
+     bottom: 3.1rem;
+     left: 5.4rem;
+   }
+
+   100% {
+     bottom: 2.7rem;
+     left: 5.05rem;
+   }
+ }
+
+ @keyframes geFourth2 {
+   0% {
+     bottom: 2.7rem;
+     left: 5.05rem;
+   }
+
+   100% {
+     bottom: 2.4rem;
+     left: 4.75rem;
+   }
+ }
+
+ @keyframes geFourth3 {
+   0% {
+     bottom: 2.4rem;
+     left: 4.75rem;
+   }
+
+   100% {
+     bottom: 2rem;
+     left: 4rem;
+   }
+ }
+
+ @keyframes geFourth4 {
+   0% {
+     bottom: 2rem;
+     left: 4rem;
+   }
+
+   100% {
+     bottom: 2.65rem;
+     left: 3.25rem;
+   }
+ }
+
+ /* 台阶跳跃 */
+ ._U_jump_I_jump {
+   animation: jump 2s;
+ }
+
+ @keyframes jump {
+   0% {
+     transform: translateY(20rem);
+   }
+
+   50% {
+     transform: translateY(-0.5rem);
+   }
+
+   100% {
+     transform: translateY(0);
+   }
+ }
+
+
+ /* 开局 */
+ /* 山&云层&标题 渐显 */
+ .startM_C {
+   animation: M_C 7s forwards;
+ }
+
+ @keyframes M_C {
+   0% {
+     opacity: 0;
+   }
+
+   100% {
+     opacity: 1;
+   }
+ }
+
+ /* 箭头渐显 */
+ .startJT {
+   animation: JT 1.5s forwards;
+ }
+
+ @keyframes JT {
+   0% {
+     opacity: 0;
+   }
+
+   100% {
+     opacity: 1;
+   }
+ }
+
+ /* 上下漂浮 */
+ .up_bown {
+   animation: up_bown 1s linear infinite alternate;
+ }
+
+ @keyframes up_bown {
+   0% {
+     transform: translateY(0.2rem);
+   }
+
+   100% {
+     transform: translateY(-0.2rem);
+   }
+ }
+
+ /* 登场台阶 */
+ @keyframes Up1 {
+   0% {
+     bottom: -2.3rem;
+     left: 2.54rem;
+   }
+
+   100% {
+     bottom: -0.3rem;
+     left: 2.54rem;
+   }
+ }
+
+ /* 小鸡登场 */
+ @keyframes Up2 {
+   0% {
+     bottom: -2.2rem;
+     left: 3.2rem;
+   }
+
+   100% {
+     bottom: -0.2rem;
+     left: 3.2rem;
+   }
+ }
+
+
+ /* 飞升柱 */
+ .Bounce8 {
+   position: absolute;
+   animation: ascent1 linear 5s forwards;
+   position: absolute;
+   bottom: -2.15rem;
+   left: 3.095rem;
+   z-index: 22;
+
+   img {
+     width: 1rem;
+     height: 5.27rem;
+     position: relative;
+     top: 0px;
+     left: 0px;
+   }
+ }
+
+ /* 小鸡飞升 */
+ .Bounce9 {
+   position: absolute;
+   bottom: 2.7rem;
+   left: 3.25rem;
+   //  z-index: 31;
+   animation: ascent1 linear 5s forwards;
+
+   img {
+     width: 0.7rem;
+     height: 1rem;
+     position: relative;
+     top: 0px;
+     left: 0px;
+   }
+ }
+
+ @keyframes ascent1 {
+   0% {
+     transform: translateY(0rem);
+   }
+
+   10% {
+     transform: translateY(0.2rem);
+   }
+
+   100% {
+     transform: translateY(-10.5rem);
+   }
+ }
+
+ /* 视角飞升 */
+ .box_top {
+   animation: ascentUp linear 5s forwards;
+ }
+
+ @keyframes ascentUp {
+   0% {
+     background-position: 0 bottom;
+   }
+
+   100% {
+     background-position: 0 top;
+   }
+ }
+
+ /* 所有建筑下沉 */
+ .down_all {
+   animation: down 5s linear forwards;
+ }
+
+ @keyframes down {
+   0% {
+     transform: translateY(0);
+
+   }
+
+   10% {
+     transform: translateY(0);
+
+   }
+
+   100% {
+     transform: translateY(10rem);
+   }
+ }
+
+ /* 结尾动画 */
+ @keyframes star_left {
+   0% {
+     position: relative;
+     left: -3rem;
+     transform: scale(0);
+     transform: rotate(-90deg);
+   }
+
+   100% {
+     position: relative;
+     left: 0rem;
+     transform: scale(1);
+     transform: rotate(0deg);
+   }
+ }
+
+ @keyframes star_middle {
+   0% {
+     transform: scale(0);
+   }
+
+   100% {
+     transform: scale(1);
+   }
+ }
+
+ @keyframes star_right {
+   0% {
+     position: relative;
+     right: -3rem;
+     transform: scale(0);
+     transform: rotate(90deg);
+   }
+
+   100% {
+     position: relative;
+     right: 0rem;
+     transform: scale(1);
+     transform: rotate(0deg);
+   }
+ }

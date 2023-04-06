@@ -1,0 +1,919 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html {
+  font-size: calc(100vw/7.2);
+  user-select: none;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(../images/star/bg.jpg);
+  background-size: cover;
+  background-position: 0 bottom;
+  position: relative;
+  bottom: -0.05rem;
+  /* 头部  */
+}
+.box .top {
+  width: 100%;
+  position: absolute;
+  top: 1rem;
+}
+.box .top img {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+.box .start_title {
+  z-index: 31;
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+  height: 1.2rem;
+  color: #fff;
+}
+.box .start_title .Picture1 {
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+.box .start_title .Picture1 p {
+  height: 0.4rem;
+  font-size: 0.5rem;
+  line-height: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  text-shadow: 0rem 0.05rem 0.05rem #5194C5;
+}
+.box .start_title .Picture1 h1 {
+  margin-top: 0.4em;
+  height: 0.4rem;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  text-shadow: 0rem 0.1rem 0.1rem #5194C5;
+}
+.box .start_title .Picture2 {
+  display: none;
+  position: relative;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+.box .start_title .Picture2 .title_1 {
+  font-size: 0.3rem;
+  display: flex;
+  flex-flow: column;
+  text-shadow: 0rem 0.03rem 0 #5194C5;
+}
+.box .start_title .Picture2 .text_1 {
+  position: absolute;
+  right: 0;
+  margin-top: 2em;
+  width: 3.4rem;
+  height: 0.4rem;
+  font-size: 0.2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  text-shadow: 0rem 0.02rem 0 #5194C5;
+}
+.box .start_title .Picture3 {
+  display: none;
+  position: relative;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+.box .start_title .Picture3 img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 1.3rem;
+  width: 1rem;
+}
+.box .start_title .Picture3 div {
+  position: absolute;
+  top: 0rem;
+  right: 1.2rem;
+  font-size: 0.28rem;
+  font-weight: bold;
+  display: flex;
+  flex-flow: column;
+  text-shadow: 0rem 0.03rem 0rem #5194C5;
+}
+.box .start_title .Picture3 p {
+  position: absolute;
+  top: 1.2rem;
+  left: 2rem;
+  text-align: center;
+  font-size: 0.18rem;
+  text-shadow: 0rem 0.01rem 0rem #5194C5;
+}
+.box .start_title .Picture4 {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+.box .start_title .Picture4 img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  width: 1rem;
+}
+.box .start_title .Picture4 div {
+  position: absolute;
+  top: 0rem;
+  right: 1.5rem;
+  font-size: 0.3rem;
+  display: flex;
+  flex-flow: column;
+  text-shadow: 0rem 0.03rem 0rem #5194C5;
+}
+.box .start_title .Picture4 p {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.8rem;
+  font-size: 0.18rem;
+  text-shadow: 0rem 0.01rem 0rem #5194C5;
+}
+.box .start_title .Picture5 {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 2rem;
+}
+.box .start_title .Picture5 div {
+  position: absolute;
+  top: 0rem;
+  left: 1.5rem;
+  font-size: 0.3rem;
+  font-weight: bold;
+  display: flex;
+  flex-flow: column;
+  text-shadow: 0rem 0.03rem 0rem #5194C5;
+}
+.box .start_title .Picture5 p {
+  position: absolute;
+  top: 1.6rem;
+  width: 60%;
+  left: 1.5rem;
+  font-size: 0.18rem;
+  text-shadow: 0rem 0.02rem 0rem #5194C5;
+}
+.box .say {
+  opacity: 0;
+  width: 2rem;
+  height: 1.2rem;
+  padding: 0 0.4rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 1rem;
+  right: 1.4rem;
+  background: url(../images/export/q.png) no-repeat;
+  background-size: cover;
+  z-index: 30;
+  color: #000;
+  font-size: 0.18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .upuptext {
+  display: none;
+  position: absolute;
+  bottom: 2.3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #1B938C;
+  z-index: 30;
+}
+.box .upuptext p {
+  width: 3.4rem;
+  height: 1rem;
+  font-size: 0.3rem;
+  font-weight: 100;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.box .upuptext div {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: column;
+}
+.box .upuptext div img {
+  margin: 0 auto;
+  width: 0.5rem;
+  opacity: 0.3;
+}
+.box .End {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  top: 0rem;
+}
+.box .End .text {
+  width: 100%;
+  position: absolute;
+  top: 0.7rem;
+  padding: 0 0.3rem;
+  box-sizing: border-box;
+  height: 1.8rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.box .End .text p {
+  text-align: start;
+  color: #fff;
+  font-size: 0.3rem;
+}
+.box .End .text p span {
+  font-size: 0.5rem;
+  font-weight: 500;
+}
+.box .End .text div {
+  width: 1.8rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  border: 0.01rem solid #fff;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  right: -4.6rem;
+  top: -1.3rem;
+  color: #fff;
+  font-size: 0.2rem;
+}
+.box .End .star {
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.box .End .star div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.box .End .star div img:nth-child(1) {
+  width: 2rem;
+}
+.box .End .star div img:nth-child(2) {
+  width: 0.8rem;
+}
+.box .End .star div p {
+  padding: 0.05rem;
+  box-sizing: border-box;
+  font-size: 0.18rem;
+  border: 0.01rem solid #fff;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.box .End .star .star_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  position: relative;
+  left: -3rem;
+  animation: star_left 1s linear forwards;
+}
+.box .End .star .star_left .one {
+  position: absolute;
+  top: -0.6rem;
+}
+.box .End .star .star_middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  animation: star_middle 1s linear forwards;
+}
+.box .End .star .star_middle .two {
+  position: absolute;
+  top: -0.6rem;
+}
+.box .End .star .star_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  position: relative;
+  right: -3rem;
+  animation: star_right 1s linear forwards;
+}
+.box .End .star .star_right .three {
+  position: absolute;
+  top: -0.6rem;
+}
+.box .End .Rewatch {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.box .End .Rewatch div {
+  width: 2rem;
+  height: 0.6rem;
+  border: 0.01rem solid #fff;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+  font-size: 0.2rem;
+}
+.down {
+  width: 100%;
+  height: 100%;
+  bottom: -0.05rem;
+  position: relative;
+  left: 0;
+  /* 台阶 */
+  /* 山 */
+  /* 云 */
+  /* 建筑 */
+}
+.down .one {
+  position: absolute;
+  bottom: -0.3rem;
+  left: 2.54rem;
+  z-index: 30;
+  animation: Up1 2.5s forwards;
+}
+.down .one img {
+  width: 2rem;
+  height: 0.58rem;
+}
+.down .two {
+  display: none;
+  position: absolute;
+  bottom: 0.05rem;
+  left: 2.55rem;
+  z-index: 29;
+}
+.down .two img {
+  width: 1rem;
+  height: 4.04rem;
+  position: relative;
+  top: 3.53rem;
+  left: 0;
+}
+.down .three {
+  display: none;
+  position: absolute;
+  bottom: 0.32rem;
+  left: 2.07rem;
+  z-index: 28;
+}
+.down .three img {
+  width: 1rem;
+  height: 4.04rem;
+  position: relative;
+  top: 3.52rem;
+  left: 0;
+}
+.down .four {
+  display: none;
+  position: absolute;
+  bottom: 0.39rem;
+  left: 2rem;
+  z-index: 27;
+}
+.down .four img {
+  width: 2rem;
+  height: 5.34rem;
+  position: relative;
+  top: 4.04rem;
+  left: -0.4rem;
+}
+.down .five {
+  display: none;
+  position: absolute;
+  bottom: 0.38rem;
+  left: 2rem;
+  z-index: 26;
+}
+.down .five img {
+  width: 1.76rem;
+  height: 3.02rem;
+  position: relative;
+  top: 1rem;
+  left: -0.65rem;
+}
+.down .six {
+  display: none;
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0.11rem;
+  z-index: 25;
+}
+.down .six img {
+  width: 1.76rem;
+  height: 3.02rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .seven {
+  display: none;
+  position: absolute;
+  bottom: -0.37rem;
+  left: 0.88rem;
+  z-index: 24;
+}
+.down .seven img {
+  width: 1rem;
+  height: 4.21rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .eight {
+  display: none;
+  position: absolute;
+  bottom: 0.4rem;
+  left: 1.375rem;
+  z-index: 23;
+}
+.down .eight img {
+  width: 1rem;
+  height: 3.75rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .nine {
+  display: none;
+  position: absolute;
+  bottom: 1.11rem;
+  left: 0.88rem;
+  z-index: 22;
+}
+.down .nine img {
+  width: 1.26rem;
+  height: 3.45rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .ten {
+  display: none;
+  position: absolute;
+  bottom: 1.54rem;
+  left: 1.62rem;
+  z-index: 21;
+}
+.down .ten img {
+  width: 1.26rem;
+  height: 3.45rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .eleven {
+  display: none;
+  position: absolute;
+  bottom: 1.97rem;
+  left: 2.347rem;
+  z-index: 20;
+}
+.down .eleven img {
+  width: 1.26rem;
+  height: 3.45rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .twelve {
+  display: none;
+  position: absolute;
+  bottom: 2.4rem;
+  left: 3.09rem;
+  z-index: 19;
+}
+.down .twelve img {
+  width: 1.26rem;
+  height: 3.45rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .thirteen {
+  display: none;
+  position: absolute;
+  bottom: 2.39rem;
+  left: 3.85rem;
+  z-index: 18;
+}
+.down .thirteen img {
+  width: 1rem;
+  height: 3.75rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .fourteen {
+  display: none;
+  position: absolute;
+  bottom: 4.38rem;
+  left: 4.34rem;
+  z-index: 19;
+}
+.down .fourteen img {
+  width: 1rem;
+  height: 1.45rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .fifteen {
+  display: none;
+  position: absolute;
+  bottom: -0.38rem;
+  left: 3.85rem;
+  z-index: 20;
+}
+.down .fifteen img {
+  width: 2rem;
+  height: 5.34rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .sixteen {
+  display: none;
+  position: absolute;
+  bottom: 0.08rem;
+  left: 4.31rem;
+  z-index: 20;
+}
+.down .sixteen img {
+  width: 1rem;
+  height: 4.04rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .seventeen {
+  display: none;
+  position: absolute;
+  bottom: -0.2rem;
+  left: 4.8rem;
+  z-index: 20;
+}
+.down .seventeen img {
+  width: 1rem;
+  height: 4.04rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .eighteen {
+  display: none;
+  position: absolute;
+  bottom: -0.19rem;
+  left: 5.3rem;
+  z-index: 20;
+}
+.down .eighteen img {
+  width: 1rem;
+  height: 3.75rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .ninety {
+  display: none;
+  position: absolute;
+  bottom: 2.46rem;
+  left: 5.05rem;
+  z-index: 21;
+}
+.down .ninety img {
+  width: 0.76rem;
+  height: 0.8rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .twenty {
+  display: none;
+  position: absolute;
+  bottom: -0.65rem;
+  right: 1.64rem;
+  z-index: 21;
+}
+.down .twenty img {
+  width: 1.26rem;
+  height: 3.45rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .twenty-one {
+  display: none;
+  position: absolute;
+  bottom: -0.2rem;
+  right: 2.35rem;
+  z-index: 23;
+}
+.down .twenty-one img {
+  width: 1.26rem;
+  height: 3.02rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .mountain {
+  min-width: 100%;
+  position: absolute;
+  bottom: 6.3rem;
+  left: 0;
+  opacity: 0;
+  z-index: 17;
+}
+.down .mountain img {
+  width: 7.2rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .Cloud_1 {
+  min-width: 100%;
+  position: absolute;
+  bottom: -0.35rem;
+  left: 0;
+  opacity: 0;
+  z-index: 22;
+}
+.down .Cloud_1 img {
+  width: 7.2rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .Cloud_2 {
+  min-width: 100%;
+  position: absolute;
+  bottom: -0.35rem;
+  left: 0;
+  opacity: 0;
+  z-index: 16;
+}
+.down .Cloud_2 img {
+  width: 7.2rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .Cloud_3 {
+  min-width: 100%;
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  opacity: 0;
+  z-index: 16;
+}
+.down .Cloud_3 img {
+  width: 7.2rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .architecture_1 {
+  display: none;
+  position: absolute;
+  bottom: 0.3rem;
+  left: 2.1rem;
+  z-index: 21;
+}
+.down .architecture_1 img {
+  width: 1.63rem;
+  height: 4.61rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .architecture_2 {
+  display: none;
+  position: absolute;
+  bottom: 1.53rem;
+  left: 0.38rem;
+  z-index: 21;
+}
+.down .architecture_2 img {
+  width: 1rem;
+  height: 3.46rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .architecture_3 {
+  display: none;
+  position: absolute;
+  bottom: 3.25rem;
+  right: 1.85rem;
+  z-index: 17;
+}
+.down .architecture_3 img {
+  width: 1rem;
+  height: 3.46rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .architecture_4 {
+  display: none;
+  position: absolute;
+  bottom: -0.1rem;
+  right: 0.145rem;
+  z-index: 19;
+}
+.down .architecture_4 img {
+  width: 1.26rem;
+  height: 4.21rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .architecture_5 {
+  display: none;
+  position: absolute;
+  bottom: 1.15rem;
+  right: 0.145rem;
+  z-index: 18;
+}
+.down .architecture_5 img {
+  width: 1.5rem;
+  height: 6.34rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .architecture_6 {
+  display: none;
+  position: absolute;
+  bottom: 1.75rem;
+  left: 1.15rem;
+  z-index: 18;
+}
+.down .architecture_6 img {
+  width: 2.5rem;
+  height: 5.71rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .architecture_7 {
+  display: none;
+  position: absolute;
+  bottom: 4.95rem;
+  left: 0.6rem;
+  z-index: 21;
+}
+.down .architecture_7 img {
+  width: 0.68rem;
+  height: 0.66rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .architecture_8 {
+  display: none;
+  position: absolute;
+  bottom: 6.55rem;
+  right: 1.91rem;
+  z-index: 17;
+}
+.down .architecture_8 img {
+  width: 0.82rem;
+  height: 0.882rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .architecture_9 {
+  display: none;
+  position: absolute;
+  bottom: 3.9rem;
+  right: 0.55rem;
+  z-index: 19;
+}
+.down .architecture_9 img {
+  width: 0.6rem;
+  height: 0.84rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.down .architecture_10 {
+  display: none;
+  position: absolute;
+  bottom: -0.75rem;
+  right: -0.38rem;
+  z-index: 21;
+}
+.down .architecture_10 img {
+  width: 1rem;
+  height: 3.2rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.twenty-two {
+  display: none;
+  position: absolute;
+  bottom: -2.15rem;
+  left: 3.095rem;
+  z-index: 22;
+}
+.twenty-two img {
+  width: 1rem;
+  height: 5.27rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+/* 点击光圈 */
+.Clicks {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  border: 0.1rem solid white;
+  animation: Click 0.5s linear infinite alternate;
+}
+.FirstClick {
+  display: none;
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  bottom: 3.75rem;
+  left: 1.5rem;
+  z-index: 30;
+}
+.SecondClick {
+  display: none;
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  bottom: 5.75rem;
+  left: 3.95rem;
+  z-index: 30;
+}
+.ThirdClick {
+  display: none;
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  bottom: 3.15rem;
+  left: 5.4rem;
+  z-index: 30;
+}
+.FourthClick {
+  display: none;
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  bottom: 2.7rem;
+  left: 3.2rem;
+  z-index: 30;
+}
+@keyframes Click {
+  from {
+    border: 0.1rem solid white;
+  }
+  to {
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 0.03rem solid white;
+  }
+}
